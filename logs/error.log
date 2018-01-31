@@ -62,3 +62,50 @@
 2018/01/30 08:58:41 [error] 6543#0: *3 access forbidden by rule, client: 192.168.122.1, server: 10.0.2.15, request: "GET / HTTP/1.1", host: "192.168.122.1:8081"
 2018/01/30 08:58:42 [error] 6543#0: *3 access forbidden by rule, client: 192.168.122.1, server: 10.0.2.15, request: "GET /favicon.ico HTTP/1.1", host: "192.168.122.1:8081"
 2018/01/30 08:58:42 [error] 6543#0: *3 access forbidden by rule, client: 192.168.122.1, server: 10.0.2.15, request: "GET /favicon.ico HTTP/1.1", host: "192.168.122.1:8081"
+2018/01/31 03:40:54 [error] 3038#0: *1 open() "/home/user/nginx/html/favicon.ico" failed (2: No such file or directory), client: 10.0.2.15, server: 10.0.2.15, request: "GET /favicon.ico HTTP/1.1", host: "10.0.2.15:8081"
+2018/01/31 04:29:47 [error] 2835#0: *1 open() "/home/user/nginx/html/favicon.ico" failed (2: No such file or directory), client: 10.0.2.15, server: 10.0.2.15, request: "GET /favicon.ico HTTP/1.1", host: "10.0.2.15:8081"
+2018/01/31 04:32:48 [emerg] 3187#0: invalid parameter "10.0.2.*" in /home/user/nginx/conf/vhosts/backend.conf:12
+2018/01/31 04:33:23 [emerg] 3240#0: invalid number of arguments in "allow" directive in /home/user/nginx/conf/vhosts/backend.conf:12
+2018/01/31 04:38:11 [emerg] 3468#0: invalid URL prefix in /home/user/nginx/conf/vhosts/backend.conf:13
+2018/01/31 04:38:54 [emerg] 3512#0: invalid URL prefix in /home/user/nginx/conf/vhosts/backend.conf:13
+2018/01/31 04:42:19 [error] 3601#0: *2 access forbidden by rule, client: 10.0.2.16, server: 10.0.2.15, request: "GET /favicon.ico HTTP/1.1", host: "10.0.2.15:8081"
+2018/01/31 04:43:25 [error] 3601#0: *3 access forbidden by rule, client: 10.0.2.17, server: 10.0.2.15, request: "GET /favicon.ico HTTP/1.1", host: "10.0.2.15:8081"
+2018/01/31 04:46:49 [error] 3601#0: *4 access forbidden by rule, client: 10.0.2.17, server: 10.0.2.15, request: "GET /favicon.ico HTTP/1.1", host: "10.0.2.15:8081"
+2018/01/31 04:48:58 [error] 3601#0: *5 access forbidden by rule, client: 10.0.2.16, server: 10.0.2.15, request: "GET /favicon.ico HTTP/1.1", host: "10.0.2.15:8081"
+2018/01/31 05:01:00 [error] 4392#0: *1 open() "/home/user/nginx/html/favicon.ico" failed (2: No such file or directory), client: 10.0.2.17, server: 10.0.2.15, request: "GET /favicon.ico HTTP/1.1", host: "10.0.2.15"
+2018/01/31 05:12:27 [error] 4556#0: *1 open() "/home/user/nginx/html/favicon.ico" failed (2: No such file or directory), client: 10.0.2.17, server: 10.0.2.15, request: "GET /favicon.ico HTTP/1.1", host: "10.0.2.15"
+2018/01/31 05:41:11 [emerg] 5308#0: unexpected "}" in /home/user/nginx/conf/vhosts/backend.conf:70
+2018/01/31 05:43:15 [error] 5357#0: *6 open() "/home/user/nginx/html/favicon.ico" failed (2: No such file or directory), client: 10.0.2.15, server: 10.0.2.15, request: "GET /favicon.ico HTTP/1.1", host: "10.0.2.15"
+2018/01/31 05:43:15 [error] 5357#0: *6 open() "/home/user/nginx/html/favicon.ico" failed (2: No such file or directory), client: 10.0.2.15, server: 10.0.2.15, request: "GET /favicon.ico HTTP/1.1", host: "10.0.2.15"
+2018/01/31 05:59:32 [emerg] 5992#0: invalid parameter "10.0.2.15" in /home/user/nginx/conf/vhosts/backend.conf:66
+2018/01/31 06:01:03 [emerg] 6085#0: invalid parameter "10.0.2.15" in /home/user/nginx/conf/vhosts/backend.conf:2
+2018/01/31 06:03:57 [emerg] 6226#0: invalid parameter "10.0.2.15" in /home/user/nginx/conf/vhosts/backend.conf:2
+2018/01/31 06:04:39 [emerg] 6276#0: invalid parameter "localhost" in /home/user/nginx/conf/vhosts/backend.conf:2
+2018/01/31 06:07:49 [emerg] 6459#0: "server" directive is not allowed here in /home/user/nginx/conf/vhosts/backend.conf:21
+2018/01/31 06:08:06 [emerg] 6501#0: "server" directive is not allowed here in /home/user/nginx/conf/vhosts/backend.conf:14
+2018/01/31 06:08:18 [emerg] 6551#0: "server" directive is not allowed here in /home/user/nginx/conf/vhosts/backend.conf:14
+2018/01/31 06:08:44 [emerg] 6594#0: "server" directive is not allowed here in /home/user/nginx/conf/vhosts/backend.conf:14
+2018/01/31 06:09:47 [emerg] 6648#0: "server" directive is not allowed here in /home/user/nginx/conf/vhosts/backend.conf:18
+2018/01/31 06:11:00 [warn] 6723#0: conflicting server name "10.0.2.15" on 0.0.0.0:8081, ignored
+2018/01/31 06:11:00 [warn] 6728#0: conflicting server name "10.0.2.15" on 0.0.0.0:8081, ignored
+2018/01/31 06:12:42 [warn] 6793#0: conflicting server name "10.0.2.15" on 0.0.0.0:8081, ignored
+2018/01/31 06:12:42 [warn] 6795#0: conflicting server name "10.0.2.15" on 0.0.0.0:8081, ignored
+2018/01/31 06:23:09 [warn] 8168#0: conflicting server name "10.0.2.15" on 0.0.0.0:8081, ignored
+2018/01/31 06:23:09 [warn] 8171#0: conflicting server name "10.0.2.15" on 0.0.0.0:8081, ignored
+2018/01/31 06:23:35 [warn] 8263#0: conflicting server name "10.0.2.15" on 0.0.0.0:8081, ignored
+2018/01/31 06:23:35 [warn] 8267#0: conflicting server name "10.0.2.15" on 0.0.0.0:8081, ignored
+2018/01/31 06:27:43 [warn] 8457#0: conflicting server name "10.0.2.15" on 0.0.0.0:8081, ignored
+2018/01/31 06:27:43 [warn] 8460#0: conflicting server name "10.0.2.15" on 0.0.0.0:8081, ignored
+2018/01/31 06:28:49 [warn] 8532#0: conflicting server name "10.0.2.15" on 0.0.0.0:8081, ignored
+2018/01/31 06:28:49 [warn] 8535#0: conflicting server name "10.0.2.15" on 0.0.0.0:8081, ignored
+2018/01/31 06:30:22 [warn] 8627#0: conflicting server name "10.0.2.15" on 0.0.0.0:8081, ignored
+2018/01/31 06:30:22 [warn] 8630#0: conflicting server name "10.0.2.15" on 0.0.0.0:8081, ignored
+2018/01/31 06:31:36 [error] 8633#0: *1 open() "/home/user/nginx/html/status" failed (2: No such file or directory), client: 10.0.2.15, server: 10.0.2.15, request: "GET /status HTTP/1.1", host: "10.0.2.15:8081", referrer: "http://10.0.2.15:8081/"
+2018/01/31 06:32:00 [warn] 8723#0: conflicting server name "10.0.2.15" on 0.0.0.0:8081, ignored
+2018/01/31 06:32:00 [warn] 8727#0: conflicting server name "10.0.2.15" on 0.0.0.0:8081, ignored
+2018/01/31 06:33:51 [warn] 8848#0: conflicting server name "10.0.2.15" on 0.0.0.0:8081, ignored
+2018/01/31 06:33:51 [warn] 8850#0: conflicting server name "10.0.2.15" on 0.0.0.0:8081, ignored
+2018/01/31 06:37:59 [warn] 8954#0: conflicting server name "10.0.2.15" on 0.0.0.0:8081, ignored
+2018/01/31 06:37:59 [warn] 8958#0: conflicting server name "10.0.2.15" on 0.0.0.0:8081, ignored
+2018/01/31 07:00:10 [error] 9972#0: *5 open() "/home/user/nginx/html/favicon.ico" failed (2: No such file or directory), client: 10.0.2.15, server: 10.0.2.15, request: "GET /favicon.ico HTTP/1.1", host: "10.0.2.15:8443"
+2018/01/31 07:00:10 [error] 9972#0: *5 open() "/home/user/nginx/html/favicon.ico" failed (2: No such file or directory), client: 10.0.2.15, server: 10.0.2.15, request: "GET /favicon.ico HTTP/1.1", host: "10.0.2.15:8443"
